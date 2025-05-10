@@ -1,0 +1,705 @@
+{
+  "intents": [
+    {
+      "intent": "confirm_order",
+      "examples": [
+        {
+          "text": "Go ahead and order"
+        },
+        {
+          "text": "Submit my order"
+        },
+        {
+          "text": "Yes, that’s it"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "goodbye",
+      "examples": [
+        {
+          "text": "Bye"
+        },
+        {
+          "text": "Goodbye"
+        },
+        {
+          "text": "See you later"
+        }
+      ],
+      "description": "goodbye"
+    },
+    {
+      "intent": "greeting",
+      "examples": [
+        {
+          "text": "Good evening"
+        },
+        {
+          "text": "Good morning"
+        },
+        {
+          "text": "Hello"
+        },
+        {
+          "text": "Hey there"
+        },
+        {
+          "text": "Hi"
+        },
+        {
+          "text": "What's up?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "location",
+      "examples": [
+        {
+          "text": "How can I get to your cafe?"
+        },
+        {
+          "text": "What’s your address?"
+        },
+        {
+          "text": "Where are you based?"
+        },
+        {
+          "text": "Where is the cafe located?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "opening_hours",
+      "examples": [
+        {
+          "text": "Are you open on weekends?"
+        },
+        {
+          "text": "What are your opening hours?"
+        },
+        {
+          "text": "What time do you close?"
+        },
+        {
+          "text": "When do you open and close?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "order_drink",
+      "examples": [
+        {
+          "text": "Can I get a hot chocolate?"
+        },
+        {
+          "text": "Can I place a drink order?"
+        },
+        {
+          "text": "Give me a cappuccino"
+        },
+        {
+          "text": "I'd like a latte"
+        },
+        {
+          "text": "I want to order a coffee"
+        },
+        {
+          "text": "One espresso please"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "order_food",
+      "examples": [
+        {
+          "text": "Can I get a sandwich?"
+        },
+        {
+          "text": "I want a muffin"
+        },
+        {
+          "text": "Let me get a bagel"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "view_menu",
+      "examples": [
+        {
+          "text": "Can I see the menu?"
+        },
+        {
+          "text": "Give me the menu"
+        },
+        {
+          "text": "Show me what you offer"
+        },
+        {
+          "text": "What’s on your menu today?"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "drinks",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "espresso",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "food_items",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "bagel",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "cheesecake",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "cookies",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "croissant",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "muffin",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "sandwich",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "toast",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "opening_hours",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sizes",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "grande",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "large",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "medium",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "small",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "tall",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sweeteners",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "honey",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "no sugar",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "stevia",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "sugar",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "yes_no",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "nah",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "no",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "nope",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "sure",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "yeah",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "yep",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "yes",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Show Menu",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Here's our menu! 🧾\n\n☕ Drinks:  \n- Espresso  \n- Cappuccino  \n- Latte  \n- Hot Chocolate  \n- Americano  \n- Chai Latte  \n\n🍴 Food:  \n- Croissant  \n- Muffin  \n- Sandwich  \n- Cheesecake  \n- Bagel\n\nWhat would you like to order today?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#view_menu",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_8_1746884981659",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "What drink would you like?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1745212798171",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1745212946897"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Any sweetener preference?"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_9_1745213083910",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1745213083911",
+      "previous_sibling": "handler_8_1745213083911"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "What food would you like?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1745213231164",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1745213283293"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "What food would you like?"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_8_1745213283961",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1745213283970",
+      "previous_sibling": "handler_7_1745213283970"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1745213050467",
+      "context": {
+        "sizes": "@sizes"
+      },
+      "conditions": "@sizes",
+      "event_name": "input",
+      "dialog_node": "handler_4_1745213050468"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "What drink would you like?"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_7_1745212947513",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1745212947518",
+      "previous_sibling": "handler_6_1745212947518"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1745212947513",
+      "context": {
+        "drinks": "@drinks"
+      },
+      "conditions": "@drinks",
+      "event_name": "input",
+      "dialog_node": "handler_6_1745212947518"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "What size – small, medium or large?"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_9_1745213050467",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1745213050468",
+      "previous_sibling": "handler_4_1745213050468"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1745213283961",
+      "context": {
+        "food_items": "@food_items"
+      },
+      "conditions": "@food_items",
+      "event_name": "input",
+      "dialog_node": "handler_7_1745213283970"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1745213083910",
+      "context": {
+        "sweeteners": "@sweeteners"
+      },
+      "conditions": "@sweeteners",
+      "event_name": "input",
+      "dialog_node": "handler_8_1745213083911"
+    },
+    {
+      "type": "standard",
+      "title": "Confirm Order",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "✅ Your order has been placed successfully! "
+              },
+              {
+                "text": "It’ll be ready for pickup in ~10 minutes."
+              },
+              {
+                "text": "Thanks for choosing Bistro! ☕"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#confirm_order",
+      "dialog_node": "node_2_1745213373749",
+      "previous_sibling": "node_9_1745213231164"
+    },
+    {
+      "type": "standard",
+      "title": "Cafe Location",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "📍 We're located at:  \n**123 Gen AI Street, Brewtown, NY**"
+              },
+              {
+                "text": "[📍 Open in Google Maps](https://www.google.com/maps)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#location",
+      "dialog_node": "node_4_1745213502338",
+      "previous_sibling": "node_5_1745213431430"
+    },
+    {
+      "type": "frame",
+      "title": "Order Drink",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "You've ordered a  *${sizes} ${drinks}* with *${sweeteners}*.\n"
+              },
+              {
+                "text": "Would you like to add a food item too?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#order_drink",
+      "dialog_node": "node_5_1745212798171",
+      "previous_sibling": "Anything else"
+    },
+    {
+      "type": "standard",
+      "title": "Cafe Timings",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "We’re open from **8:00 AM to 8:00 PM**, every day! 🕗  "
+              },
+              {
+                "text": "Come chill with us anytime ☀️"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@opening_hours",
+      "dialog_node": "node_5_1745213431430",
+      "previous_sibling": "node_2_1745213373749"
+    },
+    {
+      "type": "standard",
+      "title": "Farewell",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Goodbye! It was lovely chatting with you. ☕  \nVisit us again soon at Bistro! 💬\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#goodbye",
+      "dialog_node": "node_5_1745213551230",
+      "previous_sibling": "node_4_1745213502338"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Would you like to check the menu or place an order?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#greeting",
+      "dialog_node": "node_8_1746884981659",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "frame",
+      "title": "Order Food",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Yummy choice! 🥐 You've added ${food_item} to your order.  "
+              },
+              {
+                "text": "Would you like anything else?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#order_food",
+      "dialog_node": "node_9_1745213231164",
+      "previous_sibling": "node_5_1745212798171"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_5_1745212798171",
+      "variable": "$drinks",
+      "dialog_node": "slot_7_1745212947513",
+      "previous_sibling": "handler_1_1745212946897"
+    },
+    {
+      "type": "slot",
+      "parent": "node_9_1745213231164",
+      "variable": "$food_items",
+      "dialog_node": "slot_8_1745213283961",
+      "previous_sibling": "handler_2_1745213283293"
+    },
+    {
+      "type": "slot",
+      "parent": "node_5_1745212798171",
+      "variable": "$sizes",
+      "dialog_node": "slot_9_1745213050467",
+      "previous_sibling": "slot_7_1745212947513"
+    },
+    {
+      "type": "slot",
+      "parent": "node_5_1745212798171",
+      "variable": "$sweeteners",
+      "dialog_node": "slot_9_1745213083910",
+      "previous_sibling": "slot_9_1745213050467"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hi there! 👋 Welcome to  Bistro ☕"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "learning_opt_out": false,
+  "language": "en",
+  "description": "created for assistant 9a4dcbca-6532-4bab-b36c-442c50e772c6",
+  "name": "Bistro Cafe Assistant-dialog"
+}
